@@ -29,12 +29,8 @@ print("-Điểm trung bình:",(df["Tong_ket"].mean().round(2)))
 print("-Sv điểm tổng kết cao nhất",(df["Tong_ket"].max()))
 print("-Sv điểm tổng kết thấp nhất",(df["Tong_ket"].min()))
 print("-Số sinh viên đạt",(df["Tong_ket"]>=5).sum())
-# Biểu đồ
-plt.bar(df["Ho_ten"],df["Tong_ket"])
-plt.xlabel("Sinh viên")
-plt.ylabel("Điểm tổng kết")
-plt.title("Quản lí điểm sv")
-plt.ylim(0,10)
+
+
 
 
 
