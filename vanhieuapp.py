@@ -97,7 +97,7 @@ st.bar_chart(bieudo, y_label="Điểm tổng kết")
 
 # 5. Thong tin nguoi tao
 st.divider()
-st.caption("Người tạo ứng dụng: [Họ tên của bạn] | MSSV: [Mã số sinh viên]")
+st.caption("Người tạo ứng dụng: [Trần Văn Hiếu] | MSSV: [051208002451]")
 
 
 
