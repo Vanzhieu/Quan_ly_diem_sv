@@ -1,6 +1,7 @@
 
 # Quan_ly_diem_sv
 import streamlit as st
+st.set_page_config(page_title="QUẢN LÍ ĐIỂM SINH VIÊN")
 import pandas as pd
 import matplotlib.pyplot as plt
 # tạo bảng dữ liệu
