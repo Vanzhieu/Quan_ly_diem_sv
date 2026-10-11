@@ -1,9 +1,6 @@
 
-# Quan_ly_diem_sv
-import streamlit as st
-st.set_page_config(page_title="QUẢN LÍ ĐIỂM SINH VIÊN")
 import pandas as pd
-
+import matplotlib.pyplot as plt
 # tạo bảng dữ liệu
 du_lieu={"Ho_ten":["Hoàng","Khoa","Ngân","Yến","Trúc","Quỳnh","Tân","Hiếu","Phương","Phượng"],"Điểm_chuyên_cần":[9,8.5,7,9.5,6.5,7,8.5,9,6,8.5],"diem_gk":[9,7.5,6.5,9,6,7,8,8.5,5.5,8],"diem_ck":[8,8.5,6.8,9.2,6.2,7.5,7.8,8.8,5.8,8.3]}
 df=pd.DataFrame(du_lieu)
@@ -29,6 +26,19 @@ print("-Điểm trung bình:",(df["Tong_ket"].mean().round(2)))
 print("-Sv điểm tổng kết cao nhất",(df["Tong_ket"].max()))
 print("-Sv điểm tổng kết thấp nhất",(df["Tong_ket"].min()))
 print("-Số sinh viên đạt",(df["Tong_ket"]>=5).sum())
+# Biểu đồ
+plt.bar(df["Ho_ten"],df["Tong_ket"])
+plt.xlabel("Sinh viên")
+plt.ylabel("Điểm tổng kết")
+plt.title("Quản lí điểm sv")
+plt.ylim(0,10)
+
+
+
+
+
+
+
 
 
 
